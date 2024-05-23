@@ -24,6 +24,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-a60ddbceb7292f11c9e430d067b1eb9f.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+
     <!-- gg-font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,6 +84,14 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body id="myBody">
+    <!-- loading  -->
+    <div class="loading text-center">
+      <h1>
+        <i class="fa-regular fa-face-awesome fs-1 me-2"></i>ĐỢI TÍ, BỘ MẮC VÔ
+        LẮM HAY GÌ!
+      </h1>
+      <img src="http://a.top4top.net/p_1990j031.gif" alt="Loading" />
+    </div>
     <header class="header fixed-top">
       <nav class="navbar navbar-expand-lg" style="padding: 19px 0">
         <div class="container">
@@ -99,7 +139,7 @@
               </li>
 
               <li class="nav-item px-lg-3 position-relative">
-                <a class="nav-link" href="./contact.html">Contact</a>
+                <a class="nav-link" href="./html/contact.html">Contact</a>
               </li>
             </ul>
             <div id="myOverlay" class="overlay">
@@ -126,18 +166,162 @@
               </button>
             </div>
             <div class="schedule me-lg-3">
-              <a class="btn btn-outline-primary" href="#"> Schedule a Demo </a>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#dangnhap"
+                class="btn btn-outline-primary"
+              >
+                Đăng nhập
+              </button>
+            </div>
+            <div class="schedule me-lg-3">
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#dangki"
+                class="btn btn-outline-primary"
+                href="#"
+              >
+                Đăng kí
+              </button>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
+    <!-- form đăng nhập đăng kí  -->
+    <section class="form">
+      <!-- đăng nhập  -->
+      <div class="signin f-flex justify-content-center">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="dangnhap"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="container">
+                <div class="contact_text">
+                  <h3 class="my-3 fw-bold">Đăng nhập</h3>
+                </div>
+                <div class="contact_form">
+                  <form action="" method="post" class="">
+                    <div class="main-input d-flex flex-column">
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        class="contact-input"
+                        required=""
+                      />
+                      <input
+                        type="password"
+                        placeholder="Password"
+                        class="contact-input"
+                        required=""
+                      />
+                    </div>
+                    <div class="contact_btn text-end">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Submit now
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- đăng kí  -->
+      <div class="signup f-flex justify-content-center">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="dangki"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="container">
+                <div class="contact_text">
+                  <h3 class="my-3 fw-bold">Đăng kí</h3>
+                </div>
+                <div class="contact_form">
+                  <form action="" method="post" class="">
+                    <div class="main-input d-flex flex-column">
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        class="contact-input"
+                        required=""
+                      />
+                      <input
+                        type="Password"
+                        placeholder="Password"
+                        class="contact-input"
+                      />
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        class="contact-input"
+                        required=""
+                      />
+                      <input
+                        type="number"
+                        placeholder="Number"
+                        class="contact-input"
+                      />
+                    </div>
+                    <div class="contact_btn text-end">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Submit now
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- banner  -->
     <section class="banner">
       <div class="banner_bg">
         <div class="banner_start row d-flex align-items-center">
           <div class="owl-carousel">
-            <div class="banner_img">
+            <div class="banner_img text-center">
               <img src="./image/homeimg/banner1.jpg" alt="" class="" />
             </div>
             <div class="banner_img">
@@ -389,7 +573,7 @@
             </div>
           </div>
 
-          <div class="col py-3 mt-5 about_content_item">
+          <div class="col py-3 mt-5 about_11111content_item">
             <div class="about_item">
               <div class="about_top">
                 <a href="">
@@ -479,6 +663,7 @@
         </div>
       </div>
     </footer>
+
     <!-- back to top  -->
     <!-- all your content here -->
     <a href="#" class="cd-top text-replace js-cd-top back_to_top"
@@ -573,5 +758,55 @@
         }
       });
     </script>
+    <script>
+      // Sau 2 giây, ẩn hình loader
+      $(window).on("load", function () {
+        $(".loading").delay(2000).fadeOut("low");
+      });
+    </script>
+    <script>
+      $(".loading").height($(window).height());
+      $(".loading").width($(window).width());
+
+      $(".loading img").css({
+        paddingTop: ($(".loading").height() - $(".loading img").height()) / 2,
+        paddingLeft: ($(".loading").width() - $(".loading img").width()) / 2,
+      });
+
+      $(window).resize(function () {
+        "use strict";
+
+        $(".loading").height($(window).height());
+        $(".loading").width($(window).width());
+
+        $(".loading img").css({
+          paddingTop: ($(".loading").height() - $(".loading img").height()) / 2,
+          paddingLeft: ($(".loading").width() - $(".loading img").width()) / 2,
+        });
+      });
+
+      $(window).mousemove(function (e) {
+        "use strict";
+
+        $(".original").css({
+          left: e.pageX - 16,
+          top: e.pageY - 16,
+        });
+      });
+
+      $("body").on("click", function (e) {
+        "use strict";
+
+        $(".original")
+          .clone(true)
+          .appendTo("body")
+          .css({
+            left: e.pageX - 16,
+            top: e.pageY - 16,
+          })
+          .removeClass("original");
+      });
+    </script>
+    <script src="./js/"></script>
   </body>
 </html>
