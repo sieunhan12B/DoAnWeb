@@ -1,16 +1,3 @@
-/**
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-// document.querySelector(".form-dangnhap").style.display = "none";
-
 $(document).ready(function () {
   $.validator.addMethod(
     "complexPassword",
@@ -85,43 +72,14 @@ $(document).ready(function () {
     },
 
     submitHandler: function (form) {
-      // some other code
-      // maybe disabling submit button
-      // then:
       form.preventDefault();
-
       alert("Đăng ký thành công!");
       document.getElementById("registerForm").reset();
       document.querySelector(".form-dangnhap").style.display = "block";
       document.querySelector(".form-dangki").style.display = "none";
-
-      // form.submit();
     },
   });
 });
-
-// document
-//   .getElementById("registerForm")
-//   .addEventListener("submit", function (e) {
-//     e.preventDefault();
-
-//     const username = document.getElementById("regUsername").value;
-//     const password = document.getElementById("regPassword").value;
-//     const email = document.getElementById("regEmail").value;
-//     const phone = document.getElementById("regNumber").value;
-//     if (username && password && email && phone) {
-//       localStorage.setItem("username", username);
-//       localStorage.setItem("password", password);
-//       localStorage.setItem("email", email);
-//       localStorage.setItem("phone", phone);
-//       alert("Đăng ký thành công!");
-//       document.getElementById("registerForm").reset();
-//       document.querySelector(".form-dangnhap").style.display = "block";
-//       document.querySelector(".form-dangki").style.display = "none";
-//     } else {
-//       alert("Vui lòng điền đầy đủ thông tin.");
-//     }
-//   });
 
 document
   .getElementById("registerForm")
@@ -156,7 +114,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
   if (username === storedUsername && password === storedPassword) {
     alert("Đăng nhập thành công!");
-    window.location.href = "./../index.html"; // Chuyển hướng tới trang chủ
+    window.location.href = "./../index.html";
   } else {
     alert("Tên đăng nhập hoặc mật khẩu không đúng.");
   }
@@ -165,10 +123,7 @@ document.querySelector(".form-dangki").style.display = "none";
 
 let chuacotaikhoan1 = document.getElementById("chuacotaikhoan");
 chuacotaikhoan1.onclick = function (event) {
-  // Ngăn chặn việc gửi form (để không tải lại trang)
   event.preventDefault();
-  // Ẩn form đăng ký
   document.querySelector(".form-dangnhap").style.display = "none";
-  // Hiển thị form đăng nhập
   document.querySelector(".form-dangki").style.display = "block";
 };
