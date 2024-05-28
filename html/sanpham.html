@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- gg-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fancybox  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+      integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- sanpham css -->
+    <link rel="stylesheet" href="../css/sanpham.css" />
+  </head>
+
+  <body id="myBody">
+    <header id="headerid" class="header fixed-top">
+      <nav class="navbar navbar-expand-lg" style="padding: 19px 0">
+        <div class="container">
+          <a class="navbar-brand me-0" href="#">
+            <h1 class="mb-0">
+              <img src="../image/homeimg/logo.png" alt="" />
+            </h1>
+          </a>
+          <div class="search mode">
+            <button
+              id="switchButton"
+              title="Click to switch theme"
+              style="font-size: 22px; font-style: italic"
+            >
+              <i class="far fa-moon" style="color: black"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item px-lg-3 position-relative">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item px-lg-3 position-relative">
+                <a class="nav-link active" href="./sanpham.html">Sản phẩm</a>
+              </li>
+
+              <li class="nav-item px-lg-3 position-relative">
+                <a class="nav-link" href="./lienhe.html">Liên hệ</a>
+              </li>
+            </ul>
+            <div id="myOverlay" class="overlay">
+              <div class="overlay-content">
+                <form action="#" class="d-flex position-relative">
+                  <input
+                    type="text"
+                    placeholder="Enter Keyword"
+                    name="search"
+                  />
+                  <button type="submit">Search</button>
+                </form>
+                <span
+                  class="closebtn"
+                  onclick="closeSearch()"
+                  title="Close Overlay"
+                  >×</span
+                >
+              </div>
+            </div>
+            <div class="search me-lg-3 pb-3 pb-lg-0">
+              <button class="openBtn" onclick="openSearch() ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="schedule me-lg-3">
+              <a class="btn btn-outline-primary" href="./../html/form.html">
+                Đăng nhập
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="breadcrumb_home bg-light">
+      <div class="container" style="font-size: 14px">
+        <a href="../index.html" rel="nofollow">Home</a>
+        &nbsp;&nbsp;»&nbsp;&nbsp;Sản phẩm
+      </div>
+    </section>
+
+    <!-- content  -->
+    <section id="contentid" class="content py-4">
+      <div class="container">
+        <div class="content_group">
+          <div class="content_left">
+            <div class="row content_left_top">
+              <div class="col">
+                <a
+                  data-fancybox="gallery"
+                  href="./../image/sanpham/leobog/item5.jpg"
+                >
+                  <img
+                    src="./../image/sanpham/leobog/item5.jpg"
+                    alt="./../image/sanpham/leobog/item5.jpg"
+                  />
+                </a>
+
+                <div style="display: none">
+                  <a
+                    data-fancybox="gallery"
+                    href="./../image/sanpham/leobog/item4.jpg"
+                  >
+                    <img src="./../image/sanpham/leobog/item4.jpg" />
+                  </a>
+                  <a
+                    data-fancybox="gallery"
+                    href="./../image/sanpham/leobog/item3.jpg"
+                  >
+                    <img src="./../image/sanpham/leobog/item3.jpg" />
+                  </a>
+                  <a
+                    data-fancybox="gallery"
+                    href="./../image/sanpham/leobog/item4.jpg"
+                  >
+                    <img src="./../image/sanpham/leobog/item4.jpg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row content_left_down my-4">
+              <div class="col">
+                <a
+                  data-fancybox="gallery1"
+                  data-src="../image/sanpham/leobog/item1.jpg"
+                >
+                  <img
+                    src="../image/sanpham/leobog/item1.jpg"
+                    width="100%"
+                    alt="../image/sanpham/leobog/item1.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a
+                  data-fancybox="gallery1"
+                  data-src="../image/sanpham/leobog/item4.jpg"
+                >
+                  <img
+                    src="../image/sanpham/leobog/item4.jpg"
+                    width="100%"
+                    alt="../image/sanpham/leobog/item4.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a
+                  data-fancybox="gallery1"
+                  data-src="../image/sanpham/leobog/item3.jpg"
+                >
+                  <img
+                    src="../image/sanpham/leobog/item3.jpg"
+                    width="100%"
+                    alt="../image/sanpham/leobog/item3.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a
+                  data-fancybox="gallery1"
+                  data-src="../image/sanpham/leobog/item4.jpg"
+                >
+                  <img
+                    src="../image/sanpham/leobog/item5.jpg"
+                    width="100%"
+                    alt="../image/sanpham/leobog/item5.jpg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="content_right">
+            <div class="content_nameItem">
+              <h4 class="fw-bold">
+                Bàn phím cơ nhôm và kit phím cơ LEOBOG Hi75, Hi8, Mạch Xuôi,
+                RGB, hotswap 5 pin, 1 Mode dây, cáp xoắn
+              </h4>
+            </div>
+            <div class="content_evaluate d-flex align-items-center">
+              <div class="content_star">
+                <u>5.0</u>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star star5"></i>
+              </div>
+              <div class="content_evaluate2">
+                <u>100</u>
+                <span class="me-3">Đánh giá</span>
+              </div>
+              <div class="content_sold">
+                <span>1tr Đã bán</span>
+              </div>
+            </div>
+            <div class="content_price p-3 my-3 d-flex align-items-center">
+              <s>1.600.000 <u>đ</u>-2.000.000 <u>đ</u></s>
+              <p class="fw-bold">₫1.490.000 - ₫1.839.000</p>
+            </div>
+            <div class="content_des py-4 mt-3">
+              <h5 class="text-center fw-bold">Chi tiết sản phẩm</h5>
+              <div
+                class="des_content d-flex align-items-md-center justify-content-around"
+              >
+                <ul>
+                  <li>Thương hiệu</li>
+                  <li>Bộ sản phẩm</li>
+                  <li>Loại bàn phím</li>
+                  <li>Hạn bảo hành</li>
+                  <li>Game chuyên dụng</li>
+                  <li>Model bàn phím & chuột</li>
+                  <li>Bàn phím tương thích</li>
+                  <li>Kích thước (dài x rộng x cao)</li>
+                  <li>Kho hàng</li>
+                  <li>Gửi từ</li>
+                </ul>
+                <ul>
+                  <li><a href="">Leobog</a></li>
+                  <li>Có</li>
+                  <li>Bàn phím cơ</li>
+                  <li>Trọn đời</li>
+                  <li>Có</li>
+                  <li>LEOBOG Hi75</li>
+                  <li>Windows/ Macos</li>
+                  <li>330 x 135 x 45mm</li>
+                  <li>99</li>
+                  <li>Hồ Chí Minh</li>
+                </ul>
+              </div>
+            </div>
+            <div class="content_btnbuy d-flex justify-content-start">
+              <button class="btn add_craft">Thêm vào giỏ hàng</button>
+              <button class="btn buy">Mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="py-4 null"></div>
+
+    <!-- detail  -->
+    <section id="detailid" class="detail">
+      <div class="container">
+        <div class="detail_content">
+          <h2 class="my-4">Mô tả sản phẩm</h2>
+
+          <div class="detail_keyboard">
+            <p>
+              BÀN PHÍM CƠ NHÔM LEOBOG HI75 - BÀN PHÍM CƠ CÓ DÂY, 1 CHẾ ĐỘ KẾT
+              NỐI DÂY
+            </p>
+            <p>Hãng Sản Xuất: LEOBOG</p>
+            <ul>
+              <li>Mạch xuôi</li>
+              <li>Case nhôm CNC</li>
+              <li>Layout 75%, 81 phím (full hàng F1-F12)</li>
+              <li>Hotswap 5 pin: thay nóng được hầu hết mọi loại switch</li>
+              <li>
+                Led RGB: 16,8 triệu màu, có app chỉnh led và nháy theo nhạc
+              </li>
+              <li>Stab được lube sẵn bởi Nhà Sản Xuất</li>
+              <li>Chống kẹt nút trên toàn phím</li>
+              <li>Tương thích: Windows / macOs / Android</li>
+              <li>
+                Phụ kiện kèm theo: Sách hướng dẫn sử dụng + Dây USB type-C +
+                Dụng cụ thay switch + 2 switch tặng kèm
+              </li>
+              <li>Logo phi hành gia trang trí tỉ mỉ, có thể tháo rời</li>
+              <li>
+                Plate polycarbonat (PC) flex-cut cho cảm giác gõ sướng tay
+              </li>
+              <li>Keycap: PBT</li>
+              <li>Profile: cherry / MDA / SOA (tùy loại)</li>
+            </ul>
+          </div>
+          <div class="detail_kit">
+            <p>KIT PHÍM CƠ LEOBOG HI8 - MẠCH XUÔI, 3 MODE KẾT NỐI</p>
+            <ul>
+              <li>Mạch xuôi</li>
+              <li>Case nhôm CNC</li>
+              <li>Layout 75%, 81 phím (full hàng F1-F12)</li>
+              <li>Hotswap 5 pin: thay nóng được hầu hết mọi loại switch</li>
+              <li>
+                Led RGB: 16,8 triệu màu, có app chỉnh led và nháy theo nhạc
+              </li>
+              <li>Tương thích: Windows / macOs / Android</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="py-4 null"></div>
+
+    <!-- evoluate -->
+    <div id="evoluateid" class="evoluate">
+      <div class="container">
+        <h2 class="mb-4">ĐÁNH GIÁ SẢN PHẨM</h2>
+
+        <div class="evoluate_content py-4">
+          <div class="evoluate_left">
+            <p><span>5</span> trên 5</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="evoluate_right d-flex">
+            <ul>
+              <li class="active">Tất cả(100)</li>
+              <li>5 sao(1tr)</li>
+              <li>4 sao(7)</li>
+              <li>3 sao(8)</li>
+              <li>2 sao(9)</li>
+              <li>1 sao(10)</li>
+              <li>Có bình luận(1tr)</li>
+              <li>Có hình ảnh / Video(100)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="evoluate_comment my-5">
+          <div class="evoluate_comment_item">
+            <div class="evoluate_comment_left">
+              <img src="../image/contactimg/contact1.jpg" alt="" />
+            </div>
+            <div class="evoluate_comment_right">
+              <h6>BaoBuu</h6>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>2024-05-08 14:26 | Phân loại hàng: Phi Hành Gia,Smart V3</p>
+              <p class="fw-bold">
+                bấm phê, mỗi tội chưa mò đc nút thay đổi chế độ đèn
+              </p>
+              <img src="../image/sanpham/comment1.webp" alt="" />
+              <img src="../image/sanpham/avatar6.jpg" alt="" />
+            </div>
+          </div>
+          <hr />
+
+          <div class="evoluate_comment_item d-flex">
+            <div class="evoluate_comment_left">
+              <img src="../image/sanpham/avatar3jpg.jpg" alt="" />
+            </div>
+            <div class="evoluate_comment_right">
+              <h6>Siêu nhân đây</h6>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>2024-05-08 14:26 | Phân loại hàng: Phi Hành Gia,Smart V3</p>
+              <p class="fw-bold">
+                Sản phẩm dùng rất ổn nha mọi người, pin trâu, full foam đầy đủ,
+                stab được cân sẵn cũng tốt một cách bất ngờ. Có thể cắm switch
+                và keycap xài luôn, lớp e-coating không quá nhám và phần nào đó
+                khá mượt nữa. Rất recommend mọi người mua kit này trong tầm giá
+                nha
+              </p>
+              <img src="../image/sanpham/avatar4.jpg" alt="" />
+              <img src="../image/sanpham/avatar5.jpg" alt="" />
+            </div>
+          </div>
+          <hr />
+
+          <div class="evoluate_comment_item d-flex">
+            <div class="evoluate_comment_left">
+              <img src="../image/contactimg/contact2.jpg" alt="" />
+            </div>
+            <div class="evoluate_comment_right">
+              <h6>Minh Nhật</h6>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <p>2024-05-08 14:26 | Phân loại hàng: Phi Hành Gia,Smart V3</p>
+              <p class="fw-bold">
+                bấm phê, mỗi tội chưa mò đc nút thay đổi chế độ đèn
+              </p>
+              <img src="../image/sanpham/avatar7.jpg" alt="" />
+              <img src="../image/sanpham/avatar8.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footerid">
+      <div class="bg-light py-5">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Trang chủ</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="../index.html">Trang chủ</a>
+                </li>
+                <li class="my-2">
+                  <a href="../index.html">Banner</a>
+                </li>
+                <li class="my-2">
+                  <a href="../index.html">Danh sách sản phẩm</a>
+                </li>
+                <li class="my-2">
+                  <a href="../index.html">Box Group</a>
+                </li>
+
+                <li class="my-2">
+                  <a href="../index.html">Footer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Sản phẩm</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="#">Sản phẩm</a>
+                </li>
+                <li class="my-2">
+                  <a href="#contentid">Price</a>
+                </li>
+                <li class="my-2">
+                  <a href="#detailid">Mô tả</a>
+                </li>
+                <li class="my-2">
+                  <a href="#evoluateid">Đánh giá</a>
+                </li>
+                <li class="my-2">
+                  <a href="#footerid">Footer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Liên hệ</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="../html/lienhe.html">Banner</a>
+                </li>
+                <li class="my-2">
+                  <a href="../html/lienhe.html">Liên hệ với chúng tôi</a>
+                </li>
+                <li class="my-2">
+                  <a href="../html/lienhe.html">Liên lạc với chúng tôi</a>
+                </li>
+                <li class="my-2">
+                  <a href="../html/lienhe.html">Footer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Form</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="../html/form.html">Đăng nhập</a>
+                </li>
+                <li class="my-2">
+                  <a href="../html/form.html">Đăng kí</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pe-lg-3 ps-lg-5">
+              <h3>Bản tin</h3>
+              <div class="footer_form shadow-lg bg-white p-4 rounded-2">
+                <h4>Nhận thông tin cập nhật và ưu đãi mới nhất.</h4>
+                <form
+                  action=""
+                  class="d-flex mb-3 justify-content-between"
+                  method="about"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Địa chỉ Email"
+                    required=""
+                    class="footer_email bg-light border-0 rounded-2"
+                  />
+                  <button
+                    type="submit"
+                    class="text-center border-0 text-light rounded-2"
+                  >
+                    Gửi
+                  </button>
+                </form>
+                <p>
+                  Đăng ký nhận tin tức và bài viết mới nhất của chúng tôi. Chúng
+                  tôi sẽ không cung cấp cho bạn thư rác.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer_right d-flex justify-content-between align-items-center pt-4 mt-5 border-top border-light-subtle text-center"
+          >
+            <div>
+              <p>
+                © 2024 CopyRights BaoKeyBoard | Đặng Gia Bảo | DH52108711
+                |D21_TH06
+              </p>
+            </div>
+            <div class="footer_icon">
+              <ul class="ps-0 ps-lg-4">
+                <li class="d-inline-block me-1">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="d-inline-block me-1">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="d-inline-block me-1">
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </li>
+                <li class="d-inline-block me-1">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- back to top  -->
+    <!-- all your content here -->
+    <a href="#" class="cd-top text-replace js-cd-top back_to_top"
+      ><i class="fa-solid fa-chevron-up"></i
+    ></a>
+    <!-- back to top js -->
+    <script src="../js/back-to-top-master/assets/js/main.js"></script>
+    <script src="../js/back-to-top-master/assets/js/util.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- count-up js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
+    <!-- header -->
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+          $(".header").addClass("active");
+          $(".navbar").addClass("active");
+        } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          $(".header").removeClass("active");
+          $(".navbar").removeClass("active");
+        }
+      });
+    </script>
+    <!-- mode -->
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
+    </script>
+
+    <!-- fancybox  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

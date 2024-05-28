@@ -92,6 +92,7 @@
       </h1>
       <img src="http://a.top4top.net/p_1990j031.gif" alt="Loading" />
     </div>
+
     <header class="header fixed-top">
       <nav class="navbar navbar-expand-lg" style="padding: 19px 0">
         <div class="container">
@@ -127,19 +128,18 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item px-lg-3 position-relative">
-                <a class="nav-link" aria-current="page" href="../index.html"
-                  >Home</a
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Trang chủ</a
                 >
               </li>
               <li class="nav-item px-lg-3 position-relative">
-                <a class="nav-link active" href="./html/about.html">About</a>
+                <a class="nav-link" href="./html/sanpham.html">Sản phẩm</a>
               </li>
               <li class="nav-item px-lg-3 position-relative">
-                <a class="nav-link" href="./html/service.html">Services</a>
-              </li>
-
-              <li class="nav-item px-lg-3 position-relative">
-                <a class="nav-link" href="./html/contact.html">Contact</a>
+                <a class="nav-link" href="./html/lienhe.html">Liên hệ</a>
               </li>
             </ul>
             <div id="myOverlay" class="overlay">
@@ -150,7 +150,7 @@
                     placeholder="Enter Keyword"
                     name="search"
                   />
-                  <button type="submit">Search</button>
+                  <button type="submit">Tìm kiếm</button>
                 </form>
                 <span
                   class="closebtn"
@@ -166,24 +166,10 @@
               </button>
             </div>
             <div class="schedule me-lg-3">
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#dangnhap"
-                class="btn btn-outline-primary"
-              >
-                Đăng nhập
-              </button>
-            </div>
-            <div class="schedule me-lg-3">
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#dangki"
-                class="btn btn-outline-primary"
-                href="#"
-              >
-                Đăng kí
+              <button type="button" class="btn btn-outline-primary">
+                <a class="text-decoration-none" href="./html/form.html"
+                  >Đăng nhập</a
+                >
               </button>
             </div>
           </div>
@@ -191,133 +177,8 @@
       </nav>
     </header>
 
-    <!-- form đăng nhập đăng kí  -->
-    <section class="form">
-      <!-- đăng nhập  -->
-      <div class="signin f-flex justify-content-center">
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="dangnhap"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="container">
-                <div class="contact_text">
-                  <h3 class="my-3 fw-bold">Đăng nhập</h3>
-                </div>
-                <div class="contact_form">
-                  <form action="" method="post" class="">
-                    <div class="main-input d-flex flex-column">
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        class="contact-input"
-                        required=""
-                      />
-                      <input
-                        type="password"
-                        placeholder="Password"
-                        class="contact-input"
-                        required=""
-                      />
-                    </div>
-                    <div class="contact_btn text-end">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Submit now
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- đăng kí  -->
-      <div class="signup f-flex justify-content-center">
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="dangki"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="container">
-                <div class="contact_text">
-                  <h3 class="my-3 fw-bold">Đăng kí</h3>
-                </div>
-                <div class="contact_form">
-                  <form action="" method="post" class="">
-                    <div class="main-input d-flex flex-column">
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        class="contact-input"
-                        required=""
-                      />
-                      <input
-                        type="Password"
-                        placeholder="Password"
-                        class="contact-input"
-                      />
-                      <input
-                        type="email"
-                        placeholder="Email"
-                        class="contact-input"
-                        required=""
-                      />
-                      <input
-                        type="number"
-                        placeholder="Number"
-                        class="contact-input"
-                      />
-                    </div>
-                    <div class="contact_btn text-end">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Submit now
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- banner  -->
-    <section class="banner">
+    <section id="bannerid" class="banner">
       <div class="banner_bg">
         <div class="banner_start row d-flex align-items-center">
           <div class="owl-carousel">
@@ -336,7 +197,7 @@
     </section>
 
     <!-- tools  -->
-    <section class="tools py-5">
+    <section id="toolid" class="tools py-5">
       <div class="container">
         <div class="text_all text-center">
           <h6>TẠI SAO CHỌN TÔI</h6>
@@ -346,7 +207,7 @@
         <div class="tools_service row text-center">
           <div class="tools_item col-lg-3 col-md-6 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="image/homeimg/item1.png" alt="" />
                 <h3>Leobog hi75</h3>
                 <p class="fw-bold">1.666.666vnđ</p>
@@ -355,7 +216,7 @@
           </div>
           <div class="tools_item col-lg-3 col-md-6 px-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="./image/homeimg/item2.jpg" alt="" />
                 <h3>Xinmeng m87</h3>
                 <p class="fw-bold">850.000vnđ</p>
@@ -364,7 +225,7 @@
           </div>
           <div class="tools_item col-lg-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img src="./image/homeimg/item3.jpg" alt="" />
                 <h3>Monka 3067</h3>
                 <p class="fw-bold">1.200.000vnđ</p>
@@ -373,7 +234,7 @@
           </div>
           <div class="tools_item col-lg-3 col-md-6 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="image/homeimg/item4.jpg" alt="" />
                 <h3>Aula F75</h3>
                 <p class="fw-bold">1.400.000vnđ</p>
@@ -382,7 +243,7 @@
           </div>
           <div class="tools_item col-lg-3 col-md-6 px-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="./image/homeimg/item5.jpg" alt="" />
                 <h3>Zoom75</h3>
                 <p class="fw-bold">5.600.000vnđ</p>
@@ -391,7 +252,7 @@
           </div>
           <div class="tools_item col-lg-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img src="./image/homeimg/item6.jpg" alt="" />
                 <h3>Feker ik85</h3>
                 <p class="fw-bold">750.000vnđ</p>
@@ -400,7 +261,7 @@
           </div>
           <div class="tools_item col-lg-3 col-md-6 px-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="./image/homeimg/item7.jpg" alt="" />
                 <h3>Yunzi al75</h3>
                 <p class="fw-bold">2.800.000vnđ</p>
@@ -409,7 +270,7 @@
           </div>
           <div class="tools_item col-lg-3 col-md-6 px-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="./image/homeimg/item15.jpg" alt="" />
                 <h3>ZA63 Pro</h3>
                 <p class="fw-bold">500.000vnđ</p>
@@ -418,7 +279,7 @@
           </div>
           <div class="tools_item col-lg-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img src="./image/homeimg/item8.png" alt="" />
                 <h3>Monka 3067</h3>
                 <p class="fw-bold">1.050.000vnđ</p>
@@ -427,7 +288,7 @@
           </div>
           <div class="tools_item col-lg-3 col-md-6 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="image/homeimg/item9.jpg" alt="" />
                 <h3>Dark alien R83</h3>
                 <p class="fw-bold">1.333.333vnđ</p>
@@ -436,7 +297,7 @@
           </div>
           <div class="tools_item col-lg-3 col-md-6 px-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="./image/homeimg/item10.jpg" alt="" />
                 <h3>EverGlide AE68</h3>
                 <p class="fw-bold">$3.000.000vnđ</p>
@@ -445,7 +306,7 @@
           </div>
           <div class="tools_item col-lg-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img src="./image/homeimg/item11.jpg" alt="" />
                 <h3>BlackWindow</h3>
                 <p class="fw-bold">4.090.000vnđ</p>
@@ -454,7 +315,7 @@
           </div>
           <div class="tools_item col-lg-3 col-md-6 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="image/homeimg/item12.png" alt="" />
                 <h3>Polar 65</h3>
                 <p class="fw-bold">4.640.000vnđ</p>
@@ -463,7 +324,7 @@
           </div>
           <div class="tools_item col-lg-3 col-md-6 px-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img class="" src="./image/homeimg/item13.jpg" alt="" />
                 <h3>Kohaku R2</h3>
                 <p class="fw-bold">12.978.868vnđ</p>
@@ -472,7 +333,7 @@
           </div>
           <div class="tools_item col-lg-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img src="./image/homeimg/item14.jpg" alt="" />
                 <h3>Ximeng M75</h3>
                 <p class="fw-bold">850.000vnđ</p>
@@ -482,7 +343,7 @@
 
           <div class="tools_item col-lg-3 mt-5">
             <div class="tools_block">
-              <a href="#">
+              <a href="./html/sanpham.html">
                 <img src="./image/homeimg/item16.jpg" alt="" />
                 <h3>Ximeng X98</h3>
                 <p class="fw-bold">912.000vnđ</p>
@@ -494,7 +355,7 @@
     </section>
 
     <!-- bussiness -->
-    <section class="business py-5 bg-light">
+    <section id="bussinessid" class="business py-5 bg-light">
       <div class="container px-3">
         <div class="business_content pb-5 w-100">
           <div class="business_text text-center">
@@ -542,7 +403,7 @@
     </section>
 
     <!-- about  -->
-    <section class="about py-5">
+    <section id="aboutid" class="about py-5">
       <div class="container">
         <div class="row about_content">
           <div class="col py-3 mt-5 about_content_item">
@@ -556,10 +417,7 @@
               <div class="about_bot px-3 py-4">
                 <label class=" "><a href="">New</a></label>
                 <h4 class="my-3 pb-2">
-                  <a
-                    href="https://wp.w3layouts.com/masterwork/2021/03/01/the-best-choice-for-your-successful-business-2/"
-                    rel="bookmark"
-                    class="blog-desc-big"
+                  <a href="" rel="bookmark" class="blog-desc-big"
                     >Mẫu mới về: Bàn phím cơ tinh tế & thời trang - Hoàn hảo cho
                     bàn làm việc của bạn!</a
                   >
@@ -584,10 +442,7 @@
               <div class="about_bot px-3 py-4">
                 <label class=" "><a href="">Sáng tạo</a></label>
                 <h4 class="my-3 pb-2">
-                  <a
-                    href="https://wp.w3layouts.com/masterwork/2021/03/01/the-best-choice-for-your-successful-business-2/"
-                    rel="bookmark"
-                    class="blog-desc-big"
+                  <a href="" rel="bookmark" class="blog-desc-big"
                     >Tùy chỉnh trải nghiệm gõ của bạn lên tầm cao mới - Xây dựng
                     chính bàn phím cơ của bạn!
                   </a>
@@ -611,10 +466,7 @@
               <div class="about_bot px-3 py-4">
                 <label class=" "><a href="">Về chúng tôi</a></label>
                 <h4 class="my-3 pb-2">
-                  <a
-                    href="https://wp.w3layouts.com/masterwork/2021/03/01/the-best-choice-for-your-successful-business-2/"
-                    rel="bookmark"
-                    class="blog-desc-big"
+                  <a href="" rel="bookmark" class="blog-desc-big"
                     >BaoKeyBoard, đam mê mang đến cho bạn trải nghiệm gõ phím
                     tốt nhất- Chất lượng nhất!</a
                   >
@@ -631,9 +483,109 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="footerid">
       <div class="bg-light py-5">
         <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Trang chủ</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="#">Trang chủ</a>
+                </li>
+                <li class="my-2">
+                  <a href="#bannerid">Banner</a>
+                </li>
+                <li class="my-2">
+                  <a href="#toolid">Danh sách sản phẩm</a>
+                </li>
+                <li class="my-2">
+                  <a href="#aboutid">Box Group</a>
+                </li>
+
+                <li class="my-2">
+                  <a href="#footerid">Footer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Sản phẩm</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Sản phẩm</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Price</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Mô tả</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Đánh giá</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Footer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Liên hệ</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="./html/lienhe.html">Banner</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/lienhe.html">Liên hệ với chúng tôi</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/lienhe.html">Liên lạc với chúng tôi</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/lienhe.html">Footer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Form</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="./html/form.html">Đăng nhập</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/form.html">Đăng kí</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pe-lg-3 ps-lg-5">
+              <h3>Bản tin</h3>
+              <div class="footer_form shadow-lg bg-white p-4 rounded-2">
+                <h4>Nhận thông tin cập nhật và ưu đãi mới nhất.</h4>
+                <form
+                  action=""
+                  class="d-flex mb-3 justify-content-between"
+                  method="about"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Địa chỉ Email"
+                    required=""
+                    class="footer_email bg-light border-0 rounded-2"
+                  />
+                  <button
+                    type="submit"
+                    class="text-center border-0 text-light rounded-2"
+                  >
+                    Gửi
+                  </button>
+                </form>
+                <p>
+                  Đăng ký nhận tin tức và bài viết mới nhất của chúng tôi. Chúng
+                  tôi sẽ không cung cấp cho bạn thư rác.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
             class="footer_right d-flex justify-content-between align-items-center pt-4 mt-5 border-top border-light-subtle text-center"
           >
@@ -665,7 +617,6 @@
     </footer>
 
     <!-- back to top  -->
-    <!-- all your content here -->
     <a href="#" class="cd-top text-replace js-cd-top back_to_top"
       ><i class="fa-solid fa-chevron-up"></i
     ></a>
@@ -761,7 +712,7 @@
     <script>
       // Sau 2 giây, ẩn hình loader
       $(window).on("load", function () {
-        $(".loading").delay(2000).fadeOut("low");
+        $(".loading").delay(3000).fadeOut("low");
       });
     </script>
     <script>
@@ -807,6 +758,5 @@
           .removeClass("original");
       });
     </script>
-    <script src="./js/"></script>
   </body>
 </html>
