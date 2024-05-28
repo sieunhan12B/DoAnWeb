@@ -33,7 +33,7 @@
     />
 
     <!-- main css -->
-    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/lienhe.css" />
   </head>
 
   <body id="myBody">
@@ -42,8 +42,7 @@
         <div class="container">
           <a class="navbar-brand me-0" href="#">
             <h1 class="mb-0">
-              <i class="fa-regular fa-handshake"></i>
-              <span>Masterwork </span>
+              <img src="../image/homeimg/logo.png" alt="" />
             </h1>
           </a>
           <div class="search mode">
@@ -74,50 +73,15 @@
             <ul class="navbar-nav">
               <li class="nav-item px-lg-3 position-relative">
                 <a class="nav-link" aria-current="page" href="../index.html"
-                  >Home</a
+                  >Trang chủ</a
                 >
               </li>
               <li class="nav-item px-lg-3 position-relative">
-                <a class="nav-link" href="./about.html">About</a>
+                <a class="nav-link" href="./sanpham.html">Sản phẩm</a>
               </li>
+
               <li class="nav-item px-lg-3 position-relative">
-                <a class="nav-link" href="./service.html">Services</a>
-              </li>
-              <li class="nav-item px-lg-3 position-relative dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Pages
-                  <span class="dropdown_icon"
-                    ><i class="fa-solid fa-chevron-down"></i
-                  ></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item position-relative"
-                      href="./blogposts.html"
-                      >Blog Posts</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item position-relative" href=""
-                      >Landing page</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item position-relative" href="./404.html"
-                      >404 page</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item px-lg-3 position-relative">
-                <a class="nav-link active" href="./contact.html">Contact</a>
+                <a class="nav-link active" href="./lienhe.html">Liên hệ</a>
               </li>
             </ul>
             <div id="myOverlay" class="overlay">
@@ -144,7 +108,9 @@
               </button>
             </div>
             <div class="schedule me-lg-3">
-              <a class="btn btn-outline-primary" href="#"> Schedule a Demo </a>
+              <a class="btn btn-outline-primary" href="./../html/form.html">
+                Đăng nhập
+              </a>
             </div>
           </div>
         </div>
@@ -156,7 +122,7 @@
         &nbsp;&nbsp;»&nbsp;&nbsp;Contact page
       </div>
     </section>
-    <section class="contact">
+    <section id="contactid" class="contact">
       <div class="container py-5">
         <div class="contact_title mb-5 text-center">
           <h2
@@ -167,13 +133,13 @@
               font-weight: 800;
             "
           >
-            Contact Us
+            Liên hệ với chúng tôi
           </h2>
         </div>
         <div class="row align-items-center">
           <div class="col-lg-6">
             <img
-              src="../image/contactimg/contact2.jpg"
+              src="../image/contactimg/contact1.jpg"
               alt=""
               class="w-100 rounded-2"
             />
@@ -183,34 +149,38 @@
               <h3>Liên hệ với tôi</h3>
             </div>
             <div class="contact_form">
-              <form action="" method="post" class="">
+              <form action="" method="post" class="" id="formlienhe">
                 <div class="main-input d-flex flex-column">
                   <input
                     type="text"
                     placeholder="Enter your name"
                     class="contact-input"
                     required=""
+                    id="name"
                   />
                   <input
                     type="email"
                     placeholder="Enter your mail"
                     class="contact-input"
                     required=""
+                    id="email"
                   />
                   <input
                     type="text"
                     placeholder="Subject"
                     class="contact-input"
+                    id="contact-input"
                   />
                   <textarea
                     class="contact-textarea contact-input"
                     placeholder="Enter your message"
                     required=""
                     style="height: 130px; resize: none"
+                    id="textarea"
                   ></textarea>
                 </div>
                 <div class="contact_btn text-end">
-                  <a class="btn btn-outline-primary" href="#"> SEND </a>
+                  <button id="nutlienhe" class="btn btn-primary">SEND</button>
                 </div>
               </form>
             </div>
@@ -218,7 +188,7 @@
         </div>
       </div>
     </section>
-    <section class="touch bg-light py-5">
+    <section id="touchid" class="touch bg-light py-5">
       <div class="container">
         <div class="text_all text-center">
           <h6>Liên lạc với chúng tôi</h6>
@@ -273,16 +243,117 @@
         ></iframe>
       </div>
     </section>
-    <footer>
+    <footer id="footerid">
       <div class="bg-light py-5">
         <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Trang chủ</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="../index.html">Trang chủ</a>
+                </li>
+                <li class="my-2">
+                  <a href="../index.html">Banner</a>
+                </li>
+                <li class="my-2">
+                  <a href="../index.html">Danh sách sản phẩm</a>
+                </li>
+                <li class="my-2">
+                  <a href="../index.html">Box Group</a>
+                </li>
+
+                <li class="my-2">
+                  <a href="../index.html">Footer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Sản phẩm</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Sản phẩm</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Price</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Mô tả</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Đánh giá</a>
+                </li>
+                <li class="my-2">
+                  <a href="./html/sanpham.html">Footer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Liên hệ</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="#">Banner</a>
+                </li>
+                <li class="my-2">
+                  <a href="#contactid">Liên hệ với chúng tôi</a>
+                </li>
+                <li class="my-2">
+                  <a href="#touchid">Liên lạc với chúng tôi</a>
+                </li>
+                <li class="my-2">
+                  <a href="#footerid">Footer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_item px-lg-3 pb-4 pb-lg-0">
+              <h3>Form</h3>
+              <ul class="ps-0">
+                <li class="my-2">
+                  <a href="../html/form.html">Đăng nhập</a>
+                </li>
+                <li class="my-2">
+                  <a href="../html/form.html">Đăng kí</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pe-lg-3 ps-lg-5">
+              <h3>Bản tin</h3>
+              <div class="footer_form shadow-lg bg-white p-4 rounded-2">
+                <h4>Nhận thông tin cập nhật và ưu đãi mới nhất.</h4>
+                <form
+                  action=""
+                  class="d-flex mb-3 justify-content-between"
+                  method="about"
+                  id=""
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Địa chỉ Email"
+                    required=""
+                    class="footer_email bg-light border-0 rounded-2"
+                  />
+                  <button
+                    type="button"
+                    class="text-center border-0 text-light rounded-2"
+                  >
+                    Gửi
+                  </button>
+                </form>
+                <p>
+                  Đăng ký nhận tin tức và bài viết mới nhất của chúng tôi. Chúng
+                  tôi sẽ không cung cấp cho bạn thư rác.
+                </p>
+              </div>
+            </div>
+          </div>
           <div
             class="footer_right d-flex justify-content-between align-items-center pt-4 mt-5 border-top border-light-subtle text-center"
           >
             <div>
               <p>
-                © 2024 G.Reaper. All Rights Reserved | WordPress Theme by
-                <a href="#" class="text-dark">W3Layouts.</a>
+                © 2024 CopyRights BaoKeyBoard | Đặng Gia Bảo | DH52108711
+                |D21_TH06
               </p>
             </div>
             <div class="footer_icon">
@@ -305,14 +376,73 @@
         </div>
       </div>
     </footer>
+
+    <!-- action button -->
+    <section class="action_button">
+      <div class="container">
+        <div class="action_button_content">
+          <div class="action_item">
+            <div class="zalo">
+              <div class="action_overlay"></div>
+              <a class="p-0" href="">
+                <div class="action_overlay"></div>
+              </a>
+              <a href="">
+                <img src="../image/contactimg/logozalo.png" alt="" />
+              </a>
+              <a href=""><span>zalo nè</span></a>
+            </div>
+          </div>
+
+          <div class="action_item">
+            <div class="mess">
+              <a class="p-0" href="">
+                <div class="action_overlay"></div>
+              </a>
+
+              <a href="">
+                <img src="../image/contactimg/logomess.png" alt="" />
+              </a>
+              <a href=""><span>messenger nè</span></a>
+            </div>
+          </div>
+          <div class="action_item">
+            <div class="fb">
+              <a class="p-0" href="">
+                <div class="action_overlay"></div>
+              </a>
+
+              <a href="">
+                <img src="../image/contactimg/logofb.png" alt="" />
+              </a>
+              <a href=""><span> facebook nè </span></a>
+            </div>
+          </div>
+          <div class="action_item">
+            <div class="call">
+              <a class="p-0" href="">
+                <div class="action_overlay"></div>
+              </a>
+              <a href="#  ">
+                <img src="../image/contactimg/logocall.webp" alt="" />
+              </a>
+              <a href="">
+                <span class="">0901234567</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- back to top  -->
     <!-- all your content here -->
     <a href="#" class="cd-top text-replace js-cd-top back_to_top"
       ><i class="fa-solid fa-chevron-up"></i
     ></a>
     <!-- back to top js -->
-    <script src="../back-to-top-master/assets/js/main.js"></script>
-    <script src="../back-to-top-master/assets/js/util.js"></script>
+    <script src="../js/back-to-top-master/assets/js/main.js"></script>
+    <script src="../js/back-to-top-master/assets/js/util.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -325,13 +455,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- count-up js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
       integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
@@ -359,6 +482,17 @@
     <script>
       document.getElementById("switchButton").onclick = function () {
         document.getElementById("myBody").classList.toggle("dark");
+      };
+    </script>
+    <script>
+      document.getElementById("nutlienhe").onclick = function (event) {
+        event.preventDefault();
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let textarea = document.getElementById("textarea").value;
+        let contact = document.getElementById("contact-input").value;
+        if (email && name && textarea && contact)
+          alert("Gửi đánh giá thành công");
       };
     </script>
   </body>
