@@ -288,7 +288,7 @@ a {
   position: relative;
 
   top: 10%;
-  line-height: 20px;
+  line-height: 100%;
   font-weight: 700;
   color: #dc4f72;
 }
