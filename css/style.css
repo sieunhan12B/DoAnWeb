@@ -1123,6 +1123,9 @@ footer a:hover {
   footer .container > div {
     flex-direction: column;
   }
+  header .navbar .navbar-nav .nav-item a {
+    color: black;
+  }
 }
 @media screen and (max-width: 768px) {
   .about .col {
